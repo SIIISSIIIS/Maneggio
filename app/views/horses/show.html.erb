@@ -2,27 +2,27 @@
 
 <p>
   <% if @horse.cover.attached? %>
-    <%= image_tag url_for(@horse.cover) %>
+    <%= image_tag url_for(@horse.cover), class:"images" %>
   <% end %>
 </p>
 
 <p>
-  <strong>Nome:</strong>
+  <strong>NOME:</strong>
   <%= @horse.nome %>
 </p>
 
 <p>
-  <strong>Sesso:</strong>
+  <strong>SESSO:</strong>
   <%= @horse.sesso %>
 </p>
 
 <p>
-  <strong>Descrizione:</strong>
+  <strong>DESCRIZIONE:</strong>
   <%= @horse.descrizione %>
 </p>
 
 <p>
-  <strong>Età:</strong>
+  <strong>ETÀ:</strong>
   <%= @horse.età %>
 </p>
 
