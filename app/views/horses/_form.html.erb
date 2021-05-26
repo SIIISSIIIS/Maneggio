@@ -13,6 +13,14 @@
 
   <div class="container">
 
+
+  <div class="field">
+    <h5><%= form.label :immagine, class:"d-flex justify-content-center" %></h5>
+    <%= form.file_field :cover, class:"form-control" %>
+  </div>
+
+  <br>
+
   <div class="field">
     <h5><%= form.label :nome, class:"d-flex justify-content-center" %></h5>
     <%= form.text_field :nome, class:"form-control" %>
@@ -42,7 +50,7 @@
   <br>
 
   <div class="actions">
-    <%= form.submit 'CREA CAVALLO' %>
+    <%= form.submit 'CREA CAVALLO', class:"btn btn-primary w-100" %>
   </div>
 <% end %>
 
