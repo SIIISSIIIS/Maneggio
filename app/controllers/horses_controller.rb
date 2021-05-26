@@ -25,7 +25,7 @@ class HorsesController < ApplicationController
 
     respond_to do |format|
       if @horse.save
-        format.html { redirect_to @horse, notice: "Horse was successfully created." }
+        format.html { redirect_to @horse, notice: "CAVALLO CREATO" }
         format.json { render :show, status: :created, location: @horse }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class HorsesController < ApplicationController
   def update
     respond_to do |format|
       if @horse.update(horse_params)
-        format.html { redirect_to @horse, notice: "Horse was successfully updated." }
+        format.html { redirect_to @horse, notice: "CAVALLO AGGIORNATO" }
         format.json { render :show, status: :ok, location: @horse }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,7 +51,7 @@ class HorsesController < ApplicationController
   def destroy
     @horse.destroy
     respond_to do |format|
-      format.html { redirect_to horses_url, notice: "Horse was successfully destroyed." }
+      format.html { redirect_to horses_url, notice: "CAVALLO ELIMINATO" }
       format.json { head :no_content }
     end
   end
