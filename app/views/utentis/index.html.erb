@@ -19,11 +19,11 @@
 <table class="table">
   <thead>
     <tr>
-      <th>COGNOME</th>
-      <th>NOME</th>
-      <th>EMAIL</th>
-      <th>NUMERO</th>
-      <th>ANNOTAZIONI</th>
+      <th class="text">COGNOME</th>
+      <th class="text">NOME</th>
+      <th class="text">EMAIL</th>
+      <th class="text">NUMERO</th>
+      <th class="text">ANNOTAZIONI</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -31,14 +31,14 @@
   <tbody>
     <% @utentis.each do |utenti| %>
       <tr>
-        <td><%= utenti.cognome %></td>
-        <td><%= utenti.nome %></td>
-        <td><%= utenti.email %></td>
-        <td><%= utenti.numero %></td>
-        <td><%= utenti.annotazioni %></td>
+        <td class="text"><%= utenti.cognome %></td>
+        <td class="text"><%= utenti.nome %></td>
+        <td class="text"><%= utenti.email %></td>
+        <td class="text"><%= utenti.numero %></td>
+        <td class="text"><%= utenti.annotazioni %></td>
         <td><%= link_to 'MOSTRA', utenti, class:"btn btn-success w-100" %></td>
         <td><%= link_to 'MODIFICA', edit_utenti_path(utenti), class:"btn btn-primary w-100" %></td>
-        <td><%= link_to 'INDIETRO', utenti, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger w-100" %></td>
+        <td><%= link_to 'ELIMINA', utenti, method: :delete, data: { confirm: 'SEI SICURO?' }, class:"btn btn-danger w-100" %></td>
       </tr>
     <% end %>
   </tbody>

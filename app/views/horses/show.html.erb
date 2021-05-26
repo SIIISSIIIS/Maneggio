@@ -1,29 +1,38 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <h5 class="text">IMMAGINE:</h5>
   <% if @horse.cover.attached? %>
-    <%= image_tag url_for(@horse.cover), class:"images" %>
+    <div class="d-flex justify-content-center"><%= image_tag url_for(@horse.cover), class:"images" %></div>
   <% end %>
 </p>
 
-<p>
-  <strong>NOME:</strong>
-  <%= @horse.nome %>
-</p>
+<div style="padding: 5px"></div>
 
 <p>
-  <strong>SESSO:</strong>
-  <%= @horse.sesso %>
+  <h5 class="text">NOME:</h5>
+  <p class="text"><%= @horse.nome %></p>
 </p>
 
-<p>
-  <strong>DESCRIZIONE:</strong>
-  <%= @horse.descrizione %>
-</p>
+<div style="padding: 5px"></div>
 
 <p>
-  <strong>ETÀ:</strong>
-  <%= @horse.età %>
+  <h5 class="text">SESSO:</h5>
+  <p class="text"><%= @horse.sesso %></p>
+</p>
+
+<div style="padding: 5px"></div>
+
+<p>
+  <h5 class="text">DESCRIZIONE:</h5>
+  <div class="d-flex justify-content-center"><p class="questo text"><%= @horse.descrizione %></p></div>
+</p>
+
+<div style="padding: 5px"></div>
+
+<p>
+  <h5 class="text">ETÀ:</h5>
+  <p class="text"><%= @horse.età %></p>
 </p>
 
 
