@@ -11,32 +11,46 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :cognome %>
-    <%= form.text_field :cognome %>
-  </div>
+
+  <div class="container">
+
 
   <div class="field">
-    <%= form.label :nome %>
-    <%= form.text_field :nome %>
+    <%= form.label :cognome, class:"d-flex justify-content-center" %>
+    <%= form.text_field :cognome, class:"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
-  </div>
+  <br>
 
   <div class="field">
-    <%= form.label :numero %>
-    <%= form.number_field :numero %>
+    <%= form.label :nome, class:"d-flex justify-content-center" %>
+    <%= form.text_field :nome, class:"form-control" %>
   </div>
 
+  <br>
+
   <div class="field">
-    <%= form.label :annotazioni %>
-    <%= form.text_area :annotazioni %>
+    <%= form.label :email, class:"d-flex justify-content-center" %>
+    <%= form.text_field :email, class:"form-control" %>
   </div>
+
+  <br>
+
+  <div class="field">
+    <%= form.label :numero, class:"d-flex justify-content-center" %>
+    <%= form.number_field :numero, class:"form-control" %>
+  </div>
+
+  <br>
+
+  <div class="field">
+    <%= form.label :annotazioni, class:"d-flex justify-content-center" %>
+    <%= form.text_area :annotazioni, class:"form-control" %>
+  </div>
+
+  <br>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit 'CREA UTENTE', class:"btn btn-primary w-100" %>
   </div>
 <% end %>
