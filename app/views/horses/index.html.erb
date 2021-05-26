@@ -45,33 +45,261 @@
       </div>
     </div>
     <div class="col mb-4">
-      <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col mb-4">
-      <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col mb-4">
-      <div class="card">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
+    <div class="card">
+      <% if horse.cover.attached? %>
+        <%= image_tag url_for(horse.cover) %>
+      <% end %> 
+      <div class="card-body">
+
+        <h5 class="text"> NOME: </h5> 
+        <h6 class="text"><%= horse.nome %></h6> 
+
+        <br>
+        
+        <h5 class="text"> SESSO: </h5>
+        <h6 class="text"><%= horse.sesso %></h6>
+
+        <br>
+
+        <h5 class="text"> DESCRIZIONE: </h5>
+        <h6 class="text"><%= horse.descrizione %></h6>
+
+        <br>
+
+        <h5 class="text"> ETÀ: </h5>
+        <h6 class="text"><%= horse.età %></h6>
+
+        <br>
+
+        <div style="padding: 10px"></div>
+        <%= link_to 'MOSTRA', horse, class:"btn btn-success w-100" %>
+        <div style="padding: 10px"></div>
+        <%= link_to 'MODIFICA', edit_horse_path(horse), class:"btn btn-primary w-100" %>
+        <div style="padding: 10px"></div>
+        <%= link_to 'ELIMINA', horse, method: :delete, data: { confirm: 'SEI SICURO?' }, class:"btn btn-danger w-100" %>
       </div>
     </div>
   </div>
+    <div class="col mb-4">
+    <div class="card">
+      <% if horse.cover.attached? %>
+        <%= image_tag url_for(horse.cover) %>
+      <% end %> 
+      <div class="card-body">
+
+        <h5 class="text"> NOME: </h5> 
+        <h6 class="text"><%= horse.nome %></h6> 
+
+        <br>
+        
+        <h5 class="text"> SESSO: </h5>
+        <h6 class="text"><%= horse.sesso %></h6>
+
+        <br>
+
+        <h5 class="text"> DESCRIZIONE: </h5>
+        <h6 class="text"><%= horse.descrizione %></h6>
+
+        <br>
+
+        <h5 class="text"> ETÀ: </h5>
+        <h6 class="text"><%= horse.età %></h6>
+
+        <br>
+
+        <div style="padding: 10px"></div>
+        <%= link_to 'MOSTRA', horse, class:"btn btn-success w-100" %>
+        <div style="padding: 10px"></div>
+        <%= link_to 'MODIFICA', edit_horse_path(horse), class:"btn btn-primary w-100" %>
+        <div style="padding: 10px"></div>
+        <%= link_to 'ELIMINA', horse, method: :delete, data: { confirm: 'SEI SICURO?' }, class:"btn btn-danger w-100" %>
+      </div>
+    </div>
+  </div>
+    <div class="col mb-4">
+    <div class="card">
+      <% if horse.cover.attached? %>
+        <%= image_tag url_for(horse.cover) %>
+      <% end %> 
+      <div class="card-body">
+
+        <h5 class="text"> NOME: </h5> 
+        <h6 class="text"><%= horse.nome %></h6> 
+
+        <br>
+        
+        <h5 class="text"> SESSO: </h5>
+        <h6 class="text"><%= horse.sesso %></h6>
+
+        <br>
+
+        <h5 class="text"> DESCRIZIONE: </h5>
+        <h6 class="text"><%= horse.descrizione %></h6>
+
+        <br>
+
+        <h5 class="text"> ETÀ: </h5>
+        <h6 class="text"><%= horse.età %></h6>
+
+        <br>
+
+        <div style="padding: 10px"></div>
+        <%= link_to 'MOSTRA', horse, class:"btn btn-success w-100" %>
+        <div style="padding: 10px"></div>
+        <%= link_to 'MODIFICA', edit_horse_path(horse), class:"btn btn-primary w-100" %>
+        <div style="padding: 10px"></div>
+        <%= link_to 'ELIMINA', horse, method: :delete, data: { confirm: 'SEI SICURO?' }, class:"btn btn-danger w-100" %>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-2">
+  <div class="col mb-4">
+    <div class="card">
+      <% if horse.cover.attached? %>
+        <%= image_tag url_for(horse.cover) %>
+      <% end %> 
+      <div class="card-body">
+
+        <h5 class="text"> NOME: </h5> 
+        <h6 class="text"><%= horse.nome %></h6> 
+
+        <br>
+        
+        <h5 class="text"> SESSO: </h5>
+        <h6 class="text"><%= horse.sesso %></h6>
+
+        <br>
+
+        <h5 class="text"> DESCRIZIONE: </h5>
+        <h6 class="text"><%= horse.descrizione %></h6>
+
+        <br>
+
+        <h5 class="text"> ETÀ: </h5>
+        <h6 class="text"><%= horse.età %></h6>
+
+        <br>
+
+        <div style="padding: 10px"></div>
+        <%= link_to 'MOSTRA', horse, class:"btn btn-success w-100" %>
+        <div style="padding: 10px"></div>
+        <%= link_to 'MODIFICA', edit_horse_path(horse), class:"btn btn-primary w-100" %>
+        <div style="padding: 10px"></div>
+        <%= link_to 'ELIMINA', horse, method: :delete, data: { confirm: 'SEI SICURO?' }, class:"btn btn-danger w-100" %>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+  <div class="card">
+    <% if horse.cover.attached? %>
+      <%= image_tag url_for(horse.cover) %>
+    <% end %> 
+    <div class="card-body">
+
+      <h5 class="text"> NOME: </h5> 
+      <h6 class="text"><%= horse.nome %></h6> 
+
+      <br>
+      
+      <h5 class="text"> SESSO: </h5>
+      <h6 class="text"><%= horse.sesso %></h6>
+
+      <br>
+
+      <h5 class="text"> DESCRIZIONE: </h5>
+      <h6 class="text"><%= horse.descrizione %></h6>
+
+      <br>
+
+      <h5 class="text"> ETÀ: </h5>
+      <h6 class="text"><%= horse.età %></h6>
+
+      <br>
+
+      <div style="padding: 10px"></div>
+      <%= link_to 'MOSTRA', horse, class:"btn btn-success w-100" %>
+      <div style="padding: 10px"></div>
+      <%= link_to 'MODIFICA', edit_horse_path(horse), class:"btn btn-primary w-100" %>
+      <div style="padding: 10px"></div>
+      <%= link_to 'ELIMINA', horse, method: :delete, data: { confirm: 'SEI SICURO?' }, class:"btn btn-danger w-100" %>
+    </div>
+  </div>
+</div>
+  <div class="col mb-4">
+  <div class="card">
+    <% if horse.cover.attached? %>
+      <%= image_tag url_for(horse.cover) %>
+    <% end %> 
+    <div class="card-body">
+
+      <h5 class="text"> NOME: </h5> 
+      <h6 class="text"><%= horse.nome %></h6> 
+
+      <br>
+      
+      <h5 class="text"> SESSO: </h5>
+      <h6 class="text"><%= horse.sesso %></h6>
+
+      <br>
+
+      <h5 class="text"> DESCRIZIONE: </h5>
+      <h6 class="text"><%= horse.descrizione %></h6>
+
+      <br>
+
+      <h5 class="text"> ETÀ: </h5>
+      <h6 class="text"><%= horse.età %></h6>
+
+      <br>
+
+      <div style="padding: 10px"></div>
+      <%= link_to 'MOSTRA', horse, class:"btn btn-success w-100" %>
+      <div style="padding: 10px"></div>
+      <%= link_to 'MODIFICA', edit_horse_path(horse), class:"btn btn-primary w-100" %>
+      <div style="padding: 10px"></div>
+      <%= link_to 'ELIMINA', horse, method: :delete, data: { confirm: 'SEI SICURO?' }, class:"btn btn-danger w-100" %>
+    </div>
+  </div>
+</div>
+  <div class="col mb-4">
+  <div class="card">
+    <% if horse.cover.attached? %>
+      <%= image_tag url_for(horse.cover) %>
+    <% end %> 
+    <div class="card-body">
+
+      <h5 class="text"> NOME: </h5> 
+      <h6 class="text"><%= horse.nome %></h6> 
+
+      <br>
+      
+      <h5 class="text"> SESSO: </h5>
+      <h6 class="text"><%= horse.sesso %></h6>
+
+      <br>
+
+      <h5 class="text"> DESCRIZIONE: </h5>
+      <h6 class="text"><%= horse.descrizione %></h6>
+
+      <br>
+
+      <h5 class="text"> ETÀ: </h5>
+      <h6 class="text"><%= horse.età %></h6>
+
+      <br>
+
+      <div style="padding: 10px"></div>
+      <%= link_to 'MOSTRA', horse, class:"btn btn-success w-100" %>
+      <div style="padding: 10px"></div>
+      <%= link_to 'MODIFICA', edit_horse_path(horse), class:"btn btn-primary w-100" %>
+      <div style="padding: 10px"></div>
+      <%= link_to 'ELIMINA', horse, method: :delete, data: { confirm: 'SEI SICURO?' }, class:"btn btn-danger w-100" %>
+    </div>
+  </div>
+  </div>
+</div>
 
 <% end %>
 
