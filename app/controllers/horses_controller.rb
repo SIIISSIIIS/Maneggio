@@ -64,6 +64,6 @@ class HorsesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def horse_params
-      params.require(:horse).permit(:nome, :sesso, :descrizione, :età)
+      params.require(:horse).permit(:nome, :sesso, :descrizione, :età, :cover)
     end
 end
