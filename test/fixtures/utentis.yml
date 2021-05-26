@@ -4,8 +4,12 @@ one:
   cognome: MyString
   nome: MyString
   email: MyString
+  numero: 1
+  annotazioni: MyText
 
 two:
   cognome: MyString
   nome: MyString
   email: MyString
+  numero: 1
+  annotazioni: MyText

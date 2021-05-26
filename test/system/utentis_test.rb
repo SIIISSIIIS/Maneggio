@@ -14,9 +14,11 @@ class UtentisTest < ApplicationSystemTestCase
     visit utentis_url
     click_on "New Utenti"
 
+    fill_in "Annotazioni", with: @utenti.annotazioni
     fill_in "Cognome", with: @utenti.cognome
     fill_in "Email", with: @utenti.email
     fill_in "Nome", with: @utenti.nome
+    fill_in "Numero", with: @utenti.numero
     click_on "Create Utenti"
 
     assert_text "Utenti was successfully created"
@@ -27,9 +29,11 @@ class UtentisTest < ApplicationSystemTestCase
     visit utentis_url
     click_on "Edit", match: :first
 
+    fill_in "Annotazioni", with: @utenti.annotazioni
     fill_in "Cognome", with: @utenti.cognome
     fill_in "Email", with: @utenti.email
     fill_in "Nome", with: @utenti.nome
+    fill_in "Numero", with: @utenti.numero
     click_on "Update Utenti"
 
     assert_text "Utenti was successfully updated"
