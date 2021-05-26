@@ -1,0 +1,37 @@
+<%= form_with(model: horse) do |form| %>
+  <% if horse.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(horse.errors.count, "error") %> prohibited this horse from being saved:</h2>
+
+      <ul>
+        <% horse.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sesso %>
+    <%= form.text_field :sesso %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descrizione %>
+    <%= form.text_area :descrizione %>
+  </div>
+
+  <div class="field">
+    <%= form.label :età %>
+    <%= form.number_field :età %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
