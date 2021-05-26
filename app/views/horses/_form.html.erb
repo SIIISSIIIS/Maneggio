@@ -11,27 +11,40 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :nome %>
-    <%= form.text_field :nome %>
-  </div>
+  <div class="container">
 
   <div class="field">
-    <%= form.label :sesso %>
-    <%= form.text_field :sesso %>
+    <h5><%= form.label :nome, class:"d-flex justify-content-center" %></h5>
+    <%= form.text_field :nome, class:"form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :descrizione %>
-    <%= form.text_area :descrizione %>
-  </div>
+  <br>
 
   <div class="field">
-    <%= form.label :età %>
-    <%= form.number_field :età %>
+    <h5><%= form.label :sesso, class:"d-flex justify-content-center" %></h5>
+    <%= form.text_field :sesso, class:"form-control" %>
   </div>
+
+  <br>
+
+  <div class="field">
+    <h5><%= form.label :descrizione, class:"d-flex justify-content-center" %></h5>
+    <%= form.text_area :descrizione, class:"form-control" %>
+  </div>
+
+  <br>
+
+  <div class="field">
+    <h5><%= form.label :età, class:"d-flex justify-content-center" %></h5>
+    <%= form.number_field :età, class:"form-control" %>
+  </div>
+
+  <br>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit 'CREA CAVALLO' %>
   </div>
 <% end %>
+
+
+</div>
